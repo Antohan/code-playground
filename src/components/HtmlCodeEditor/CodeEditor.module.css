@@ -1,0 +1,10 @@
+.component {
+    font-size: 16px;
+    font-variant-ligatures: common-ligatures;
+    background-color: #e5e5e5;
+    padding: 8px;
+}
+
+.component textarea {
+    outline: none;
+}
