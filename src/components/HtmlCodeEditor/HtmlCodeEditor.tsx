@@ -15,13 +15,17 @@ const HtmlCodeEditor: FC = observer(() => {
   const { code, update } = store;
 
   return (
-    <Editor
-      value={code}
-      onValueChange={update}
-      highlight={highlight}
-      className={classes.component}
-      padding={10}
-    />
+    <label className={classes.component}>
+      HTML Editor
+      <Editor
+        value={code}
+        onValueChange={update}
+        highlight={highlight}
+        className={classes.editor}
+        textareaClassName={classes.textarea}
+        padding={10}
+      />
+    </label>
   );
 });
 
